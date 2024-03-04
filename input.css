@@ -2,75 +2,73 @@
 @tailwind components;
 @tailwind utilities;
 
-
 body {
-    background-image: url(../img/bg-tablet-pattern.svg);
-    background-repeat: no-repeat;
-    background-size: 800px;
-    background-position: 80% -20%;
+  background-image: url(../img/bg-tablet-pattern.svg);
+  background-repeat: no-repeat;
+  background-size: 800px;
+  background-position: 80% -20%;
 }
 
 #cta {
-    background-image: url(../img/bg-simplify-section-desktop.svg);
-    background-repeat: no-repeat;
+  background-image: url(../img/bg-simplify-section-desktop.svg);
+  background-repeat: no-repeat;
 }
 
-@media(max-width: 576px) {
-    body {
-        background-position: 50px -50px;
-        background-size: 500px;
-    }
+@media (max-width: 576px) {
+  body {
+    background-position: 50px -50px;
+    background-size: 500px;
+  }
 
-    #cta {
-        background-image: url(../img/bg-simplify-section-mobile.svg);
-    }
+  #cta {
+    background-image: url(../img/bg-simplify-section-mobile.svg);
+  }
 }
 
 /* Hamburger Menua */
 
 .hamburger {
-    cursor: pointer;
-    width: 24px;
-    height: 24px;
-    transition: all 0.25s;
-    position: relative;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  transition: all 0.25s;
+  position: relative;
 }
 
 .hamburger-top,
 .hamburger-mid,
 .hamburger-bot {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 28px;
-    height: 3px;
-    background: #000;
-    transform: rotate(0);
-    transition: all 0.5s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 28px;
+  height: 3px;
+  background: #000;
+  transform: rotate(0);
+  transition: all 0.5s;
 }
 
 .hamburger-mid {
-    transform: translateY(7px);
+  transform: translateY(7px);
 }
 
 .hamburger-bot {
-    transform: translateY(14px);
+  transform: translateY(14px);
 }
 
-
 .open {
-    transform: rotate(90deg);
-    transform: translateY(0px);
+  transform: rotate(90deg);
+  transform: translateY(0px);
 }
 
 .open .hamburger-top {
-    transform: rotate(45deg) translateY(6px) translate(6px);
+  transform: rotate(45deg) translateY(6px) translate(6px);
 }
 
 .open .hamburger-mid {
-    display: none;
+  display: none;
 }
 
 .open .hamburger-bot {
-    transform: rotate(-45deg) translateY(6px) translate(-6px);
+  transform: rotate(-45deg) translateY(6px) translate(-6px);
 }
